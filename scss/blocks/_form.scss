@@ -1,0 +1,53 @@
+.form__input {
+  height: 50px;
+
+  font-size: 14px;
+  line-height: 193%;
+
+  padding: 12px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: $white;
+
+  transition: background-color 0.2s ease-in;
+
+  &::placeholder {
+    color: $placeholder;
+  }
+
+  &:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.form__privacy {
+  font-size: 13px;
+  line-height: 123%;
+  text-align: center;
+  align-self: center;
+  color: $privacy;
+
+  &--bottom {
+    @include mediaTablet {
+      grid-row: 4/5;
+    }
+  }
+}
+
+.form__btn {
+  height: 50px;
+
+  padding: 12px 12px;
+  font-weight: 700;
+  font-size: 16px;
+  color: $white;
+  text-align: center;
+  line-height: 169%;
+  background-color: $accent;
+
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: saturate($color: $accent, $amount: 10%);
+  }
+}

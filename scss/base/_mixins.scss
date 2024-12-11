@@ -1,0 +1,18 @@
+@mixin decorNumber {
+  position: absolute;
+  top: 0;
+
+  line-height: 1.15;
+  font-family: $font-accent;
+  font-weight: 700;
+  font-size: 400px;
+  color: rgba($color: $white, $alpha: 0.02);
+
+  z-index: -1;
+}
+
+@mixin mediaTablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
